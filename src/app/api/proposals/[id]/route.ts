@@ -4,7 +4,7 @@ import { getServerSession } from "next-auth";
 
 export async function PUT(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const session = await getServerSession();
@@ -35,7 +35,7 @@ export async function PUT(
 // Opzionale: Aggiunto DELETE per dare all'admin la possibilità di fare pulizia
 export async function DELETE(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const session = await getServerSession();
