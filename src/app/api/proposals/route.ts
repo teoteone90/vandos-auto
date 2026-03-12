@@ -14,6 +14,7 @@ export async function POST(req: Request) {
       carYear,
       carKms,
       message,
+      images,
     } = body;
 
     if (!name || !email || !carMake || !carModel || !carYear || carKms === undefined) {
@@ -30,6 +31,9 @@ export async function POST(req: Request) {
         carYear,
         carKms,
         message,
+        images: images && images.length > 0 ? {
+          create: images.map((url: string) => ({ url }))
+        } : undefined,
       },
     });
 

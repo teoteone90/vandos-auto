@@ -49,7 +49,7 @@ model Image {
 }
 
 model Submission {
-  id          String   @id @default(cuid())
+  id          String            @id @default(cuid())
   name        String
   email       String
   phone       String?
@@ -58,9 +58,19 @@ model Submission {
   carYear     Int
   carKms      Int
   message     String?
-  createdAt   DateTime @default(now())
-  viewed      Boolean  @default(false)
+  createdAt   DateTime          @default(now())
+  viewed      Boolean           @default(false)
+  images      SubmissionImage[]
 }
+
+model SubmissionImage {
+  id           String     @id @default(cuid())
+  url          String
+  submission   Submission @relation(fields: [submissionId], references: [id], onDelete: Cascade)
+  submissionId String
+  createdAt    DateTime   @default(now())
+}
+
 model Subscriber {
   id        String   @id @default(cuid())
   email     String   @unique
