@@ -135,13 +135,23 @@ export default async function CarDetailsPage({
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <Link 
-                  href="/sell" 
-                  className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-200"
+              <div className="space-y-3">
+                <a
+                  href="tel:+40732983662"
+                  className="flex items-center justify-center gap-3 w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-200"
                 >
-                  Contattaci per questa auto
-                </Link>
+                  <span>📞</span>
+                  <span>+40 732 983 662</span>
+                </a>
+                <a
+                  href="https://wa.me/40732983662"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 w-full text-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-xl transition-all"
+                >
+                  <span>💬</span>
+                  <span>WhatsApp</span>
+                </a>
                 <div className="flex items-center justify-center gap-6 text-sm text-gray-500 font-medium">
                   <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-green-500" /> Garanzia 12 mesi</span>
                   <span className="flex items-center gap-1.5"><CheckCircle className="w-4 h-4 text-green-500" /> Tagliando incluso</span>
