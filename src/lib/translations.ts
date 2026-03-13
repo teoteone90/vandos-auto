@@ -4,8 +4,10 @@ export type Language = 'it' | 'en' | 'fr' | 'ro';
 export const translations = {
   it: {
     // Header
+    home: 'Home',
     availableCars: 'Auto Disponibili',
     sellCar: 'Vendi auto',
+    about: 'Chi Siamo',
     admin: 'Admin',
     // Homepage
     heroTitle: 'Vandos Auto Import-Export',
@@ -39,8 +41,10 @@ export const translations = {
     sendAnother: 'Invia un\'altra proposta',
   },
   en: {
+    home: 'Home',
     availableCars: 'Available Cars',
     sellCar: 'Sell your car',
+    about: 'About Us',
     admin: 'Admin',
     heroTitle: 'Vandos Auto Import-Export',
     heroSubtitle: 'Find the car of your dreams with the quality and guarantee of the leader in international import-export.',
@@ -71,8 +75,10 @@ export const translations = {
     sendAnother: 'Send another proposal',
   },
   fr: {
+    home: 'Accueil',
     availableCars: 'Voitures disponibles',
     sellCar: 'Vendre votre voiture',
+    about: 'À propos',
     admin: 'Admin',
     heroTitle: 'Vandos Auto Import-Export',
     heroSubtitle: 'Trouvez la voiture de vos rêves avec la qualité et la garantie du leader de l\'import-export international.',
@@ -103,8 +109,10 @@ export const translations = {
     sendAnother: 'Envoyer une autre proposition',
   },
   ro: {
+    home: 'Acasă',
     availableCars: 'Mașini disponibile',
     sellCar: 'Vinde mașina',
+    about: 'Despre Noi',
     admin: 'Admin',
     heroTitle: 'Vandos Auto Import-Export',
     heroSubtitle: 'Găsește mașina visurilor tale cu garanția și calitatea liderului în import-export internațional.',

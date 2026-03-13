@@ -34,6 +34,20 @@ export default function Header() {
             href="/"
             className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
           >
+            <span className="hidden sm:inline">{t.home}</span>
+          </Link>
+
+          <Link
+            href="/about"
+            className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
+          >
+            <span className="hidden sm:inline">{t.about}</span>
+          </Link>
+
+          <Link
+            href="/"
+            className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors"
+          >
             <Car className="w-4 h-4" />
             <span className="hidden sm:inline">{t.availableCars}</span>
           </Link>
